@@ -16,3 +16,5 @@ apply: ## Run chezmoi apply
 macos: ## Run macos script
 	chezmoi cat ~/.chezmoi_scripts/98-macos-preferences.sh | bash
 	chezmoi cat ~/.chezmoi_scripts/99-macos-name.zsh | zsh
+
+# install: ## install app and package Note: You need to have homebrew first

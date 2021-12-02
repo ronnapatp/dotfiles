@@ -1,6 +1,6 @@
 # Dotfiles
 
-I use dotfiles [@narze](https://github.com/narze) and modify to my own style
+I use dotfiles from [@narze](https://github.com/narze) and modify to my own style
 
 ## Chezmoi
 

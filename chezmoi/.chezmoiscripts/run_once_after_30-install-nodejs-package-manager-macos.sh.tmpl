@@ -1,16 +1,16 @@
 {{- if (eq .chezmoi.os "darwin") -}}
 #!/bin/sh
 
-# Install common macOS packages
+# Install nodejs global package
 
 source /tmp/chezmoi-utils.sh
 
 printf "${green}[30 - macOS] ${reset}"
 {{- if or (lt 10 (atoi (env "SCRIPTS_START_AT"))) (env "SKIP_NODE") }}
-echo "Skip installing nodejs packages"
+echo "Skip installing nodejs global packages"
 exit 0
 {{ else }}
-echo "Install yarn pnpm"
+echo "Install nodejs global packages"
 {{- end }}
 
 echo "Installing yarn"

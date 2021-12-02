@@ -22,5 +22,9 @@ echo "Installing Homebrew..."
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-echo "Homebrew Installed!"
+echo "Finish instelling homebrew and going to re-shell"
+
+exec $SHELL-l
+
+echo "Changed shell"
 {{ end -}}

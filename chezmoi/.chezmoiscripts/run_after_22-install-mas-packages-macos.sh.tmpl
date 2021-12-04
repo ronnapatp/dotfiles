@@ -25,9 +25,11 @@ fi
 
 brew bundle --no-lock --file=/dev/stdin <<EOF
 
+echo "Installing application from app store"
 mas "CYHMN Can you hear me now?", id: 1564656437
 mas "LINE", id: 539883307
 mas "PDF Reader Pro - Lite Edition", id: 919472673
 
+echo "Installed application from app store"
 EOF
 {{ end -}}

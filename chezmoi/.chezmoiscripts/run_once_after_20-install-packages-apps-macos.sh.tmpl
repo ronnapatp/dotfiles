@@ -37,6 +37,9 @@ set -eufo pipefail
   "signal"
 -}}
 
+echo "Opening edge to setup"
+open -a "Microsoft edge"
+
 brew bundle --no-lock --file=/dev/stdin <<EOF || :
 {{ range ($taps | sortAlpha | uniq) -}}
 tap "{{ . }}"
